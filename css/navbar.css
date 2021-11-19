@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #f5f5f5;
+  z-index: 9;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+.our-logo {
+  height: 60px;
+}
+.lists {
+  list-style-type: none;
+  display: inline-block;
+}
+.list-item {
+  margin-right: 20px;
+  display: inline-block;
+  margin-top: 10px;
+}
+.list-cart {
+  margin-right: 20px;
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.link {
+  text-transform: capitalize;
+  padding: 0 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #383838;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.link:hover {
+  opacity: 1;
+}
+.producstOnCart {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  overscroll-behavior: contain;
+  background-color: #202020;
+  width: 300px;
+  height: 500px;
+  color: #f0f0f0;
+  z-index: 15;
+  position: fixed;
+  top: 20px;
+  right: 0;
+  text-align: center;
+  animation: fade 1s;
+}
+
+.producstOnCart::-webkit-scrollbar {
+  display: none;
+}
+@keyframes fade {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.producstOnCart::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.hide {
+  display: none;
+  visibility: none;
+}
+
+.producstOnCart ul {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.producstOnCart img {
+  width: 90px;
+}
+
+.producstOnCart .top {
+  display: flex;
+  background-color: #616161;
+  text-align: center;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.top button {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  color: #c24c37;
+  cursor: pointer;
+}
+
+.top button:hover {
+  color: #e40505;
+}
+
+.top h3 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+.producstOnCart > .checkout {
+  font-size: 0.9rem;
+  margin: 20px auto;
+  border: none;
+  background-color: #297075;
+  padding: 10px 20px;
+  color: #eee;
+  cursor: pointer;
+}
+.producstOnCart .empty {
+  justify-self: center;
+  margin: 150px auto;
+}
+.overlay {
+  overflow: hidden;
+  display: inline-block;
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.stopScrolling {
+  height: 100vh;
+  overflow: hidden;
+}
