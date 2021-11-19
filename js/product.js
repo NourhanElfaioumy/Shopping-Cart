@@ -6,7 +6,7 @@ productImgs.forEach((item, i) => {
   item.addEventListener("click", () => {
     productImgs[activeImgSlide].classList.remove("active");
     item.classList.add("active");
-    // imgsSlide.style.backgroundImage = "url(`${item.src}`)";
+    imgsSlide.style.backgroundImage = `url('${item.src}')`;
     activeImgSlide = i;
   });
 });
