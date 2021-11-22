@@ -7,7 +7,7 @@ const createNavbar = () => {
         <li class="list-item"> <a href="file:///D:/Work/E-commerce%202/products.html#" class="link">Products</a></li>
         <li class="list-item"> <a href="#" class="link">About</a></li>
         <li class="list-item"> <a href="#" class="link">Contact</a></li>
-        <li  class="list-cart"><i class="fa fa-cart-plus shoppingCart" style="font-size:20px"><span class="cart-span">0</span></i>
+        <li  class="list-cart"><i class="fa fa-cart-plus shoppingCart" style="font-size:17px"><span class="cart-span">0</span></i><a href="#" class="link">Cart</a>
         </li>
         <div class='carts-product'></div>
 
