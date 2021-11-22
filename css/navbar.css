@@ -47,6 +47,16 @@
 .link:hover {
   opacity: 1;
 }
+/* .carts-product {
+  position: absolute;
+  width: 200px;
+  transform: translate(-42%, 0);
+  background: #eaeaea;
+  top: 30px;
+  padding: 10px;
+  border: 1px solid #383838;
+  /* display: none; */
+
 .producstOnCart {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
