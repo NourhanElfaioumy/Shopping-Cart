@@ -111,4 +111,26 @@ function totalCost(product) {
   }
 }
 
+// function displayCart() {
+//   let cartItems = localStorage.getItem("productInCart");
+//   cartItems = JSON.parse(cartItems);
+//   let productContainer = document.querySelector(".products");
+
+//   if (cartItems && productContainer) {
+//     productContainer.innerHTML = "";
+//     Object.values(cartItems).map((item) => {
+//       productContainer.innerHTML += `
+//       <div class="product">
+//       <i class="far fa-times-circle"></i>
+//       <img src ="../img/${item.image}.png">
+//       <span>${item.description}</span>
+//       </div>
+//       <div class="product-price">${item.price}</div>
+//       // <div class="product-quantity"></div>
+//       `;
+//     });
+//   }
+// }
+// displayCart();
+
 onLoadCartNumber();
